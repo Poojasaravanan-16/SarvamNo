@@ -1,0 +1,5268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sarvam Trust</title>
+
+  <meta name="description" content="">
+
+  <meta name="keywords" content="">
+
+
+
+  <!-- Favicons -->
+
+  <link href="https://cdn.razorpay.com/logos/KMrKOuvyT8jYJg_large.jpeg" rel="icon">
+
+  <link href="assets/img/sarvam-logo.jpg" rel="apple-touch-icon">
+
+
+
+  <!-- Fonts -->
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+
+
+<body class="index-page">
+
+
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+
+        <img src="assets/img/sarvam-logo-removebg-preview (1).png" alt="">
+
+        <h1 class="sitename">Sarvam Trust</h1><span></span>
+
+      </a>
+
+
+
+      <nav id="navmenu" class="navmenu">
+        <style>
+          /* Header & Navigation Styles */
+          .header {
+            transition: all 0.5s ease;
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+          }
+        
+          .header.scrolled {
+            padding: 10px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+          }
+        
+          .logo {
+            text-decoration: none;
+          }
+        
+          .logo img {
+            max-height: 50px;
+            transition: all 0.3s ease;
+          }
+        
+          .sitename {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #148aea;
+            margin-left: 10px;
+          }
+        
+          .navmenu ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+          }
+        
+          .navmenu li {
+            position: relative;
+            padding: 0 12px;
+          }
+        
+          .navmenu a {
+            color: #333;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 10px 15px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+          }
+        
+          .navmenu a:not(.btn-getstarted):after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #148aea;
+            bottom: 0;
+            left: 0;
+            transition: all 0.3s ease;
+          }
+        
+          .navmenu a:hover:not(.btn-getstarted),
+          .navmenu .active:not(.btn-getstarted) {
+            color: #148aea;
+          }
+        
+          .navmenu a:hover:after,
+          .navmenu .active:after {
+            width: 100%;
+          }
+        
+          .btn-getstarted {
+            background: #148aea;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            margin-left: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(20, 138, 234, 0.3);
+          }
+        
+          .btn-getstarted:hover {
+            background: #0d6fd8;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(20, 138, 234, 0.4);
+          }
+        
+          .mobile-nav-toggle {
+            color: #333;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+            line-height: 0;
+            transition: 0.5s;
+          }
+        
+          /* Mobile Navigation */
+          @media (max-width: 1199px) {
+            .navmenu {
+              position: fixed;
+              top: 0;
+              right: -100%;
+              width: 300px;
+              height: 100vh;
+              background: #fff;
+              overflow-y: auto;
+              transition: 0.5s;
+              z-index: 9999;
+              box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
+              padding-top: 70px;
+            }
+        
+            .navmenu ul {
+              flex-direction: column;
+              padding: 0;
+              margin: 0;
+            }
+        
+            .navmenu li {
+              width: 100%;
+              padding: 0;
+            }
+        
+            .navmenu a {
+              display: block;
+              padding: 15px 20px;
+              border-bottom: 1px solid #f0f0f0;
+            }
+        
+            .navmenu a:after {
+              display: none;
+            }
+        
+            .navmenu .btn-getstarted {
+              margin: 20px;
+              width: calc(100% - 40px);
+              text-align: center;
+            }
+        
+            .mobile-nav-toggle {
+              display: block;
+            }
+        
+            .navmenu-active {
+              right: 0;
+            }
+          }
+        
+          /* Scrolled Header */
+          .header.scrolled .logo img {
+            height: 40px;
+          }
+        
+          .header.scrolled .navmenu a {
+            padding: 8px 15px;
+          }
+        </style>
+        <ul>
+
+          <li><a href="index.html#hero" class="active">Home</a></li>
+
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="services-details.html#all">Services</a></li>
+
+          <li><a href="index.html#portfolio">Works</a></li>
+
+          <!-- <li><a href="index.html#team">Team</a></li>  -->
+
+          <li><a href="blog.html">Blog</a></li>
+
+          <li><a href="index.html#contact">Contact</a></li>
+
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+      </nav>
+
+
+
+      <a href="donate.html" target="_blank" class="btn-getstarted">DONATE</a>
+
+
+
+    </div>
+
+  </header>
+
+
+
+  <main class="main">
+
+
+
+    <!-- Hero Section -->
+
+    <section id="hero" class="hero section dark-background">
+
+
+
+      <img src="last-imgs\IMG-20250322-WA0065 (1).jpg" alt="" data-aos="fade-in">
+
+
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-10">
+
+            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Sarvam Trust</h2>
+
+            <p data-aos="fade-up" data-aos-delay="200">Empowering communities through sustainable development and social
+              welfare initiatives</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </section><!-- /Hero Section -->
+
+
+
+
+    </div>
+
+
+
+    </section><!-- /Clients Section -->
+
+
+
+    <!-- About Section -->
+
+    <section id="about" class="about section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center gy-5">
+          <!-- About Text Section -->
+
+          <div class="col-xl-5" data-aos="fade-right" data-aos-delay="150">
+
+            <div class="content">
+              <center>
+
+                <h3 class="section-title">About Us</h3>
+              </center>
+              <br>
+              <br>
+
+              <p style="text-align: justify;">
+                Founded on July 13, 2016, in Namakkal, Tamil Nadu, Sarvam Educational Trust was created with a clear and
+                compassionate mission — to bridge socio-economic gaps and uplift underprivileged communities through
+                holistic development initiatives.</p>
+              <br>
+              <p>We believe true and lasting progress happens when education, healthcare, and social welfare are
+                interconnected and delivered through a thoughtful, structured framework.
+              </p>
+
+
+
+              <div class="additional-content" data-aos="fade-up" data-aos-delay="300">
+
+                <p>Over the past 8 years, we have positively transformed the lives of over 50,000 individuals through
+                  our diverse programs. Our work revolves around three core pillars:</p>
+
+                <ul class="animated-list">
+
+                  <li data-aos="fade-left" data-aos-delay="350"><i class="bi bi-check-circle-fill"></i> Quality
+                    Education for All</li>
+
+                  <li data-aos="fade-left" data-aos-delay="400"><i class="bi bi-check-circle-fill"></i> Healthcare
+                    Accessibility</li>
+
+                  <li data-aos="fade-left" data-aos-delay="450"><i class="bi bi-check-circle-fill"></i> Community
+                    Empowerment</li>
+
+                </ul>
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Icon Boxes -->
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box animated-card">
+                  <div class="icon"><i class="bi bi-book"></i></div>
+                  <h3>Planning</h3>
+                  <p>We crafted a thoughtful approach to raise awareness about hygiene. By involving energetic student
+                    volunteers, eye-catching stickers, and support from local influencers, we aimed to inspire positive
+                    change in the community.</p>
+                  <div class="wave-animation"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box animated-card">
+                  <div class="icon"><i class="bi bi-heart-pulse"></i></div>
+                  <h3>Organising</h3>
+                  <p>Dedicated teams took charge of design, logistics, and community engagement. With well-prepared
+                    materials and clearly defined roles, we ensured seamless coordination and efficient execution.</p>
+                  <div class="wave-animation"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="icon-box animated-card">
+                  <div class="icon"><i class="bi bi-people-fill"></i></div>
+                  <h3>Scheduling</h3>
+                  <p>The event featured a series of campaigns, impactful speeches, and engaging group activities, all
+                    organized with careful planning to ensure smooth execution throughout the day.</p>
+                  <div class="wave-animation"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                <div class="icon-box animated-card">
+                  <div class="icon"><i class="bi bi-tree-fill"></i></div>
+                  <h3>Executing</h3>
+                  <p>Volunteers connected with every household, making a real difference. Guest talks and community
+                    sessions added depth, leaving a memorable and lasting impact.</p>
+                  <div class="wave-animation"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Internal Style (can be moved to CSS file) -->
+
+      <style>
+        /* Service Details Section */
+        .service-details {
+          padding: 60px 0;
+          background-color: #f9f9f9;
+        }
+
+        /* Filter Sidebar */
+        .filter-sidebar {
+          padding: 20px;
+          position: sticky;
+          top: 20px;
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .filter-sidebar .heading {
+          color: #148aea;
+          margin-bottom: 20px;
+          font-weight: 600;
+        }
+
+        .filter-list {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .filter-btn {
+          padding: 10px 15px;
+          border: none;
+          background: #f1f9ff;
+          color: #333;
+          border-radius: 8px;
+          text-align: left;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          font-size: 0.95rem;
+        }
+
+        .filter-btn i {
+          margin-right: 8px;
+          font-size: 1.1rem;
+        }
+
+        .filter-btn.active {
+          background: #148aea;
+          color: white;
+        }
+
+        .filter-btn:not(.active):hover {
+          background: #e1f0fa;
+        }
+
+        /* Cards Container */
+        .cards-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+          gap: 20px;
+          height: auto;
+          overflow: visible;
+        }
+
+        /* Service Card */
+        .service-card {
+          border: none;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .service-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-img-container {
+          position: relative;
+          height: 200px;
+          overflow: hidden;
+        }
+
+        .card-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.5s ease;
+        }
+
+        .service-card:hover .card-img {
+          transform: scale(1.05);
+        }
+
+        .card-category {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          padding: 5px 12px;
+          border-radius: 20px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: white;
+          text-transform: uppercase;
+        }
+
+        .education {
+          background-color: #4CAF50;
+        }
+
+        .environment {
+          background-color: #8BC34A;
+        }
+
+        .women {
+          background-color: #E91E63;
+        }
+
+        .health {
+          background-color: #00BCD4;
+        }
+
+        .hunger {
+          background-color: #FF9800;
+        }
+
+        .card-content {
+          padding: 20px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .card-content h3 {
+          color: #148aea;
+          margin-bottom: 15px;
+          font-weight: 600;
+        }
+
+        .card-text {
+          margin-bottom: 20px;
+          flex: 1;
+        }
+
+        .card-text p {
+          color: #555;
+          margin-bottom: 10px;
+          font-size: 0.95rem;
+        }
+
+        .card-stats {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          margin-top: auto;
+        }
+
+        .stat-item {
+          display: flex;
+          align-items: center;
+          font-size: 0.9rem;
+          color: #666;
+        }
+
+        .stat-item i {
+          margin-right: 5px;
+          color: #148aea;
+        }
+
+        /* Animated List Styles */
+        .animated-list {
+          list-style: none;
+          padding: 0;
+        }
+
+        .animated-list li {
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          font-size: 1rem;
+        }
+
+        .animated-list i {
+          color: #148aea;
+          margin-right: 10px;
+        }
+
+        /* Icon Box Animation */
+        .icon-box.animated-card {
+          background: #fff;
+          border-radius: 15px;
+          padding: 20px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+          position: relative;
+          overflow: hidden;
+          transition: transform 0.3s ease;
+        }
+
+        .icon-box.animated-card:hover {
+          transform: translateY(-8px);
+        }
+
+        .icon-box .icon {
+          font-size: 2rem;
+          color: #148aea;
+          margin-bottom: 10px;
+        }
+
+        .wave-animation {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 4px;
+          width: 100%;
+          background: linear-gradient(90deg, #148aea, #44c6f0);
+          animation: waveSlide 2s infinite linear;
+        }
+
+        @keyframes waveSlide {
+          0% {
+            transform: translateX(-100%);
+          }
+
+          100% {
+            transform: translateX(100%);
+          }
+        }
+
+        /* No Scroll on Filter */
+        .row {
+          overflow: hidden;
+        }
+
+        .cards-container {
+          overflow: visible;
+          min-height: 600px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+          .cards-container {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          }
+        }
+
+        @media (max-width: 768px) {
+          .filter-sidebar {
+            position: static;
+            margin-bottom: 30px;
+          }
+
+          .filter-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
+
+          .filter-btn {
+            flex: 1 0 auto;
+          }
+        }
+      </style>
+
+    </section>
+
+
+
+    <style>
+      /* Animation Styles */
+
+      .animated-card {
+
+        position: relative;
+
+        overflow: hidden;
+
+        transition: all 0.5s ease;
+
+      }
+
+
+
+      .animated-card:hover {
+
+        transform: translateY(-10px);
+
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+      }
+
+
+
+      .wave-animation {
+
+        position: absolute;
+
+        bottom: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 5px;
+
+        background: linear-gradient(90deg, #148aea, #148aea);
+
+        transform: scaleX(0);
+
+        transform-origin: left;
+
+        transition: transform 0.5s ease;
+
+      }
+
+
+
+      .animated-card:hover .wave-animation {
+
+        transform: scaleX(1);
+
+      }
+
+
+
+      .animated-list li {
+
+        opacity: 0;
+
+        transform: translateX(-20px);
+
+        transition: all 0.5s ease;
+
+      }
+
+
+
+      .animated-list li.show {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+      }
+
+
+
+      .floating-shapes {
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        overflow: hidden;
+
+        z-index: -1;
+
+      }
+
+
+
+      .shape {
+
+        position: absolute;
+
+        background: rgba(78, 84, 200, 0.1);
+
+        border-radius: 50%;
+
+      }
+
+
+
+      .shape-1 {
+
+        width: 150px;
+
+        height: 150px;
+
+        top: 20%;
+
+        left: 5%;
+
+        animation: float 8s ease-in-out infinite;
+
+      }
+
+
+
+      .shape-2 {
+
+        width: 100px;
+
+        height: 100px;
+
+        bottom: 15%;
+
+        right: 10%;
+
+        animation: float 6s ease-in-out infinite reverse;
+
+      }
+
+
+
+      .shape-3 {
+
+        width: 80px;
+
+        height: 80px;
+
+        top: 60%;
+
+        left: 80%;
+
+        animation: float 7s ease-in-out infinite 2s;
+
+      }
+
+
+
+      @keyframes float {
+
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+
+        50% {
+          transform: translateY(-20px) rotate(10deg);
+        }
+
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+
+      }
+
+
+
+      .counter {
+
+        font-size: 2.5rem;
+
+        font-weight: 700;
+
+        color: #148aea;
+
+      }
+
+
+
+      .stats-container {
+
+        display: flex;
+
+        justify-content: space-around;
+
+        text-align: center;
+
+      }
+
+
+
+      .stat-item {
+
+        padding: 0 15px;
+
+      }
+    </style>
+
+
+
+    <script>
+
+      // Counter animation
+
+      const counters = document.querySelectorAll('.counter');
+
+      const speed = 200;
+
+
+
+      function animateCounters() {
+
+        counters.forEach(counter => {
+
+          const target = +counter.getAttribute('data-target');
+
+          const count = +counter.innerText;
+
+          const increment = target / speed;
+
+
+
+          if (count < target) {
+
+            counter.innerText = Math.ceil(count + increment);
+
+            setTimeout(animateCounters, 1);
+
+          } else {
+
+            counter.innerText = target;
+
+          }
+
+        });
+
+      }
+
+
+
+      // Intersection Observer for animations
+
+      const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add('show');
+
+            if (entry.target.classList.contains('counter')) {
+
+              animateCounters();
+
+            }
+
+          }
+
+        });
+
+      }, {
+
+        threshold: 0.1
+
+      });
+
+
+
+      document.querySelectorAll('.animated-list li').forEach(item => {
+
+        observer.observe(item);
+
+      });
+
+
+
+      document.querySelectorAll('.counter').forEach(counter => {
+
+        observer.observe(counter);
+
+      });
+
+    </script>
+
+
+    <!-- 
+founder view -->
+
+
+    <!--Founders views starts-->
+
+    <section id="founders-view" class="founder-section">
+      <!-- Background Animated Shape -->
+      <div class="background-shape"></div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Founder Image Section -->
+          <div class="col-lg-6 founder-image">
+            <img src="assets/img/Founder .jpg" alt="Founder Image">
+          </div>
+
+          <!-- Founder Text Section -->
+          <div class="col-lg-6 founder-text">
+            <h2>From the Founder</h2>
+            <h3>Our Journey & Mission</h3>
+            <p>
+              SARVAM Educational Trust was born out of a deep-rooted belief that <strong>every human deserves dignity,
+                safety, and hope</strong>.
+              Since its inception in 2016, we've been driven by the mission to transform the lives of the underserved,
+              providing education, shelter, food, and care to those in need.
+            </p>
+            <p>
+              Through each initiative, we strive to uplift individuals, empower communities, and create a sustainable
+              future. Our mission continues with unwavering dedication to improving lives, one step at a time.
+            </p>
+            <p class="founder-quote">
+              "When we see someone in need, we don’t walk away. We extend our hand, and our heart."
+              <br>– Ms.Ramya, Founder
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internal CSS (can be moved to your external CSS file) -->
+    <style>
+      .founder-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 20px;
+        position: relative;
+        min-height: 500px;
+        overflow: hidden;
+      }
+
+      /* Founder Text */
+      .founder-text {
+        flex: 1 1 500px;
+        padding: 40px;
+        animation: fadeInLeft 1.5s ease-out;
+        z-index: 10;
+      }
+
+      .founder-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #000509;
+        /* text-transform: uppercase; */
+        letter-spacing: 2px;
+        position: relative;
+      }
+
+      .founder-text h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: #148aea;
+        margin-top: 8px;
+      }
+
+      .founder-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+
+      .founder-quote {
+        font-style: italic;
+        color: #555;
+        border-left: 4px solid #148aea;
+        padding-left: 20px;
+        margin-top: 30px;
+        font-size: 1.3rem;
+      }
+
+      /* Founder Image */
+      .founder-image {
+        flex: 1 1 450px;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        animation: fadeInRight 1.5s ease-out;
+        z-index: 10;
+      }
+
+      .founder-image img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(20, 138, 234, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .founder-image img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 40px rgba(20, 138, 234, 0.4);
+      }
+
+      /* Background Animation */
+      .background-shape {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(45deg, #44c6f0, #148aea);
+        filter: blur(100px);
+        animation: backgroundMotion 10s infinite alternate;
+        z-index: -1;
+      }
+
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes backgroundMotion {
+        0% {
+          transform: translateX(-50%);
+        }
+
+        100% {
+          transform: translateX(50%);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .founder-section {
+          flex-direction: column;
+          padding: 60px 20px;
+        }
+
+        .founder-text h2 {
+          font-size: 2rem;
+        }
+
+        .founder-text p {
+          font-size: 1rem;
+        }
+
+        .founder-quote {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+
+
+
+<!-- Achievements Section -->
+<section id="achievements" class="achievements section light-background">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Achievements</h2>
+    <p>Milestones that showcase our impact and growth over the years</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Achievement Card 1 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h3>50,000+</h3>
+          <p>Lives Impacted</p>
+          <div class="wave-animation"></div>
+        </div>
+      </div>
+
+      <!-- Achievement Card 2 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="bi bi-book"></i>
+          </div>
+          <h3>25+</h3>
+          <p>Education Programs</p>
+          <div class="wave-animation"></div>
+        </div>
+      </div>
+
+      <!-- Achievement Card 3 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="bi bi-tree-fill"></i>
+          </div>
+          <h3>10,000+</h3>
+          <p>Trees Planted</p>
+          <div class="wave-animation"></div>
+        </div>
+      </div>
+
+      <!-- Achievement Card 4 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="bi bi-heart-pulse"></i>
+          </div>
+          <h3>100+</h3>
+          <p>Health Camps</p>
+          <div class="wave-animation"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Achievements Section -->
+
+<style>
+  /* Achievements Section Styles */
+  .achievements {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+  }
+
+  .achievement-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(20, 138, 234, 0.2);
+  }
+
+  .achievement-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #148aea, #44c6f0);
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .achievement-card:hover .achievement-icon {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 10px 20px rgba(20, 138, 234, 0.3);
+  }
+
+  .achievement-card h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #148aea;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .achievement-card:hover h3 {
+    color: #0d6fd8;
+  }
+
+  .achievement-card p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+
+  .wave-animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #148aea, #44c6f0);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s ease;
+  }
+
+  .achievement-card:hover .wave-animation {
+    transform: scaleX(1);
+  }
+
+  /* Background Shapes Animation */
+  .achievements::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(20, 138, 234, 0.05);
+    border-radius: 50%;
+    animation: float 15s infinite ease-in-out;
+    z-index: -1;
+  }
+
+  .achievements::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(68, 198, 240, 0.05);
+    border-radius: 50%;
+    animation: float 12s infinite ease-in-out reverse;
+    z-index: -1;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .achievement-card {
+      padding: 25px 15px;
+    }
+    .achievement-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 25px;
+    }
+    .achievement-card h3 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .achievements {
+      padding: 60px 0;
+    }
+    .achievement-card {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+    <!--Founders views ends-->
+
+
+    <!--Our team section starts-->
+
+    <!-- <section id="team" class="team section light-background">
+      <canvas id="particles-bg"></canvas>
+      Section Title -->
+
+      
+
+      <!-- STYLES -->
+      <!-- <style>
+        .team {
+          position: relative;
+          overflow: hidden;
+          padding: 100px 0;
+          background: linear-gradient(to bottom, #f4f9ff, #ffffff);
+        }
+
+        #particles-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+        }
+
+        .team-box {
+          background: #fff;
+          border-radius: 20px;
+          padding: 30px;
+          text-align: center;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+          transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .team-box:hover {
+          transform: translateY(-12px);
+          box-shadow: 0 25px 50px rgba(20, 138, 234, 0.25);
+        }
+
+        .team-img img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 4px solid #148aea;
+          margin-bottom: 15px;
+        }
+
+        .team-box h4 {
+          font-weight: 600;
+          margin-bottom: 5px;
+          color: #148aea;
+        }
+
+        .team-box .role {
+          font-size: 0.9rem;
+          color: #888;
+          margin-bottom: 10px;
+        }
+
+        .section-title.light-sweep {
+          display: inline-block;
+          background: linear-gradient(90deg, #148aea, #44c6f0);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color:< transparent;
+          position: relative;
+        }
+
+        .section-title.light-sweep::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -70%;
+          width: 50%;
+          height: 100%;
+          background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+          animation: sweep 3s infinite;
+        }
+
+        @keyframes sweep {
+          0% {
+            left: -70%;
+          }
+
+          100% {
+            left: 100%;
+          }
+        }
+      </style> -->
+
+      <!-- PARTICLES BACKGROUND SCRIPT -->
+      <!-- <script>
+        const canvas = document.getElementById("particles-bg");
+        const ctx = canvas.getContext("2d");
+        let particles = [];
+
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function createParticles() {
+          particles = [];
+          for (let i = 0; i < 70; i++) {
+            particles.push({
+              x: Math.random() * canvas.width,
+              y: Math.random() * canvas.height,
+              r: Math.random() * 2 + 1,
+              dx: (Math.random() - 0.5) * 0.5,
+              dy: (Math.random() - 0.5) * 0.5
+            });
+          }
+        }
+
+        function drawParticles() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          particles.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(20,138,234,0.3)";
+            ctx.fill();
+
+            p.x += p.dx;
+            p.y += p.dy;
+
+            if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+            if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+          });
+          requestAnimationFrame(drawParticles);
+        }
+
+        createParticles();
+        drawParticles();
+      </script> -->
+    </section> 
+
+
+
+    <!--our team section ends-->
+
+    <!-- Stats Section -->
+
+    <section id="stats" class="stats section dark-background">
+
+
+
+      <img src="assets\img\voluteer-img.jpg.jpeg" alt="" data-aos="fade-in">
+
+
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+
+
+        <div class="row gy-4">
+
+
+
+          <div class="col-lg-3 col-md-6">
+
+            <div class="stats-item text-center w-100 h-100">
+
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+                class="purecounter with-plus"></span>
+
+              <p>Communities Served</p>
+
+            </div>
+
+          </div><!-- End Stats Item -->
+
+
+
+          <div class="col-lg-3 col-md-6">
+
+            <div class="stats-item text-center w-100 h-100">
+
+              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
+                class="purecounter with-plus"></span>
+
+              <p>Projects</p>
+
+            </div>
+
+          </div><!-- End Stats Item -->
+
+
+
+          <div class="col-lg-3 col-md-6">
+
+            <div class="stats-item text-center w-100 h-100">
+
+              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1"
+                class="purecounter with-plus"></span>
+
+              <p>Volunteers</p>
+
+            </div>
+
+          </div><!-- End Stats Item -->
+
+
+
+          <div class="col-lg-3 col-md-6">
+
+            <div class="stats-item text-center w-100 h-100">
+
+              <span data-purecounter-start="0" data-purecounter-end="09" data-purecounter-duration="1"
+                class="purecounter with-plus"></span>
+
+              <p>Years of Service</p>
+
+            </div>
+
+          </div><!-- End Stats Item -->
+
+
+
+          <style>
+            /* For all counters with plus sign */
+
+            .purecounter.with-plus::after {
+
+              content: "+";
+
+              display: inline-block;
+
+              margin-left: 2px;
+
+              font-size: 0.8em;
+
+              vertical-align: top;
+
+            }
+
+
+
+            /* If you need to adjust the positioning */
+
+            .stats-item {
+
+              position: relative;
+
+            }
+
+
+
+            /* If using PureCounter.js and need to wait for animation */
+
+            /* This JavaScript will add the class after counting completes */
+          </style>
+
+
+
+    </section><!-- /Stats Section -->
+
+
+
+    <!-- Services Section -->
+
+    <section id="services" class="services section">
+
+
+
+      <!-- Section Title -->
+
+      <div class="container section-title" data-aos="fade-up">
+
+        <h2>Our Focus Areas</h2>
+
+        <p>Key initiatives that drive our mission for social change and community development</p>
+
+      </div><!-- End Section Title -->
+
+
+
+      <div class="container">
+
+
+
+        <div class="row gy-4">
+
+
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-item d-flex">
+
+              <div class="icon flex-shrink-0"><i class="bi bi-book"></i></div>
+
+              <div>
+
+                <h4 class="title"><a href="services-details.html#education" class="stretched-link">Education</a></h4>
+
+                <p class="description">Providing quality education and learning resources to underprivileged children
+                  and adults to empower them with knowledge and skills for a better future.</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- End Service Item -->
+
+
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+
+            <div class="service-item d-flex">
+
+              <div class="icon flex-shrink-0"><i class="bi bi-tree"></i></div>
+
+              <div>
+
+                <h4 class="title"><a href="services-details.html#environment" class="stretched-link">Environment</a>
+                </h4>
+
+                <p class="description">Promoting environmental conservation through tree plantation drives, waste
+                  management programs, and sustainable development initiatives.</p>
+
+              </div>
+
+            </div>
+
+          </div><!-- End Service Item -->
+
+
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+
+            <div class="service-item d-flex">
+
+              <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+
+              <div>
+
+                <h4 class="title"><a href="services-details.html#women" class="stretched-link">Women Empowerment</a>
+                </h4>
+
+                <p class="description">Creating opportunities for women through skill development, financial literacy
+                  programs, and support for entrepreneurship.</p>
+
+              </div>
+
+            </div>
+
+          </div><!-- End Service Item -->
+
+
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+
+            <div class="service-item d-flex">
+
+              <div class="icon flex-shrink-0"><i class="bi bi-egg-fried"></i></div>
+
+              <div>
+
+                <h4 class="title"><a href="services-details.html#hunger" class="stretched-link">No Hunger</a></h4>
+
+                <p class="description">Running community kitchens, food distribution programs, and agricultural
+                  initiatives to eliminate hunger and malnutrition.</p>
+
+              </div>
+
+            </div>
+
+          </div><!-- End Service Item -->
+
+
+
+          <div class="row justify-content-center">
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+
+              <div class="service-item d-flex">
+
+                <div class="icon flex-shrink-0"><i class="bi bi-heart-pulse"></i></div>
+
+                <div>
+
+                  <h4 class="title"><a href="services-details.html#health" class="stretched-link">Health &
+                      Sanitation</a></h4>
+
+                  <p class="description">Providing medical camps, health awareness programs, and sanitation facilities
+                    to improve community health standards.</p>
+
+                </div>
+
+              </div>
+
+            </div><!-- End Service Item -->
+
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </section><!-- /Services Section -->
+
+
+
+    <!-- Features Section -->
+
+    <section id="features" class="features section">
+
+
+
+      <!-- Section Title -->
+
+      <div class="container section-title" data-aos="fade-up">
+
+        <h2>Our Vision & Mission</h2>
+
+        <p>Guiding principles that shape our work and impact</p>
+
+      </div><!-- End Section Title -->
+
+
+
+      <div class="container">
+
+
+
+        <div class="row gy-4 align-items-center features-item">
+
+          <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+
+            <h3>Our Vision</h3>
+
+            <p style="text-align: justify;">
+
+              To create a society where every individual has equal opportunities for growth, education, and livelihood,
+
+              and where communities thrive in harmony with nature. We envision a world free from poverty, inequality,
+
+              and environmental degradation, where human dignity and rights are respected for all.
+
+            </p>
+
+          </div>
+
+          <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+
+            <div class="image-stack">
+
+              <img src="/Sarvam-NGO/assets/img/images1.jpeg" alt="" class="stack-front">
+
+              <img src="/Sarvam-NGO/assets/img/images2.jpeg" alt="" class="stack-back">
+
+            </div>
+
+          </div>
+
+        </div><!-- Features Item -->
+
+
+
+        <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+
+          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+
+            <img src="/Sarvam-NGO/assets/img/mission.jpg" class="img-fluid" alt="">
+
+          </div>
+
+          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+
+            <h3>Our Mission</h3>
+
+            <p>To empower marginalized communities through sustainable development initiatives that address:</p>
+
+            <ul>
+
+              <li><i class="bi bi-check"></i> <span>Education and skill development for all age groups</span></li>
+
+              <li><i class="bi bi-check"></i><span> Environmental conservation and sustainable practices</span></li>
+
+              <li><i class="bi bi-check"></i> <span>Women's empowerment and gender equality</span></li>
+
+              <li><i class="bi bi-check"></i> <span>Healthcare access and sanitation facilities</span></li>
+
+              <li><i class="bi bi-check"></i> <span>Food security and nutrition programs</span></li>
+
+            </ul>
+
+          </div>
+
+        </div><!-- Features Item -->
+
+
+
+      </div>
+
+
+
+    </section><!-- /Features Section -->
+
+
+
+    <!-- Portfolio Section -->
+
+    <section id="portfolio" class="portfolio section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Impact</h2>
+        <p>See how we're making a difference in communities across the region</p>
+      </div><!-- End Section Title -->
+      
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-education">Education</li>
+            <li data-filter=".filter-environment">Environment</li>
+            <li data-filter=".filter-women">Women Empowerment</li>
+            <li data-filter=".filter-health">Health and Sanitation</li>
+            <li data-filter=".filter-poverty">No Poverty No Hunger</li>
+          </ul><!-- End Portfolio Filters -->
+          
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- Education Category (5 items) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-education all-showcase">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/edu11.png" class="img-fluid" alt="Education">
+                <div class="portfolio-info">
+                  <h4>School Construction</h4>
+                  <p>Built 5 new schools in rural areas</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-education">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/edu12.jpg" class="img-fluid" alt="Education">
+                <div class="portfolio-info">
+                  <h4>Scholarship Program</h4>
+                  <p>Supported 200 students with scholarships</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-education">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/edu13.jpg" class="img-fluid" alt="Education">
+                <div class="portfolio-info">
+                  <h4>Teacher Training</h4>
+                  <p>Trained 50 teachers in modern methods</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-education">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/edu14.png" class="img-fluid" alt="Education">
+                <div class="portfolio-info">
+                  <h4>Digital Learning</h4>
+                  <p>Provided tablets to 10 schools</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-education">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/edu15.png" class="img-fluid" alt="Education">
+                <div class="portfolio-info">
+                  <h4>Library Development</h4>
+                  <p>Established 8 community libraries</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Environment Category (5 items) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-environment all-showcase">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/envi1.jpg" class="img-fluid" alt="Environment">
+                <div class="portfolio-info">
+                  <h4>Tree Planting</h4>
+                  <p>Planted 10,000 trees in urban areas</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-environment">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/envi2.jpg" class="img-fluid" alt="Environment">
+                <div class="portfolio-info">
+                  <h4>Clean Water</h4>
+                  <p>Provided clean water to 5 villages</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-environment">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/envi3.jpg" class="img-fluid" alt="Environment">
+                <div class="portfolio-info">
+                  <h4>Recycling Program</h4>
+                  <p>Established 15 recycling centers</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-environment">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/envi4.jpg" class="img-fluid" alt="Environment">
+                <div class="portfolio-info">
+                  <h4>Solar Energy</h4>
+                  <p>Installed solar panels in 3 communities</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-environment">
+              <div class="portfolio-card h-100">
+                <img src="/Sarvam-NGO/assets/img/envi5.jpg" class="img-fluid" alt="Environment">
+                <div class="portfolio-info">
+                  <h4>Wildlife Protection</h4>
+                  <p>Protected 5 endangered species habitats</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Women Empowerment Category (5 items) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-women all-showcase">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/we1.png" class="img-fluid" alt="Women Empowerment">
+                <div class="portfolio-info">
+                  <h4>Vocational Training</h4>
+                  <p>Trained 300 women in various skills</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-women">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/we2.png" class="img-fluid" alt="Women Empowerment">
+                <div class="portfolio-info">
+                  <h4>Microfinance</h4>
+                  <p>Provided loans to 150 women entrepreneurs</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-women">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/we3.png" class="img-fluid" alt="Women Empowerment">
+                <div class="portfolio-info">
+                  <h4>Leadership Program</h4>
+                  <p>Trained 50 women leaders</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-women">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/we4.png" class="img-fluid" alt="Women Empowerment">
+                <div class="portfolio-info">
+                  <h4>Health Awareness</h4>
+                  <p>Educated 500 women on health issues</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-women">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/we5.png" class="img-fluid" alt="Women Empowerment">
+                <div class="portfolio-info">
+                  <h4>Legal Support</h4>
+                  <p>Provided legal aid to 100 women</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Health and Sanitation Category (5 items) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-health all-showcase">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/health1.jpg" class="img-fluid" alt="Health">
+                <div class="portfolio-info">
+                  <h4>Medical Camps</h4>
+                  <p>Organized 12 free medical camps</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-health">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/health2.webp" class="img-fluid" alt="Health">
+                <div class="portfolio-info">
+                  <h4>Vaccination Drive</h4>
+                  <p>Vaccinated 5,000 children</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-health">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/health3.png" class="img-fluid" alt="Health">
+                <div class="portfolio-info">
+                  <h4>Sanitation Facilities</h4>
+                  <p>Built 200 toilets in rural areas</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-health">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/health.png" class="img-fluid" alt="Health">
+                <div class="portfolio-info">
+                  <h4>Nutrition Program</h4>
+                  <p>Provided meals to 1,000 malnourished children</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-health">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/health5.png" class="img-fluid" alt="Health">
+                <div class="portfolio-info">
+                  <h4>Health Education</h4>
+                  <p>Trained 100 community health workers</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- No Poverty No Hunger Category (5 items) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-poverty all-showcase">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/no1.png" class="img-fluid" alt="Poverty">
+                <div class="portfolio-info">
+                  <h4>Food Distribution</h4>
+                  <p>Distributed meals to 10,000 people</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-poverty">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/no2.png" class="img-fluid" alt="Poverty">
+                <div class="portfolio-info">
+                  <h4>Livelihood Program</h4>
+                  <p>Trained 200 people in income-generating skills</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-poverty">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/no3.png" class="img-fluid" alt="Poverty">
+                <div class="portfolio-info">
+                  <h4>Housing Support</h4>
+                  <p>Built 50 homes for homeless families</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-poverty">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/no4.png" class="img-fluid" alt="Poverty">
+                <div class="portfolio-info">
+                  <h4>Community Kitchen</h4>
+                  <p>Established 5 community kitchens</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-poverty">
+              <div class="portfolio-card h-100">
+                <img src="assets/img/no5.png" class="img-fluid" alt="Poverty">
+                <div class="portfolio-info">
+                  <h4>Agricultural Support</h4>
+                  <p>Provided seeds and tools to 100 farmers</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Portfolio Container -->
+        </div>
+      </div>
+    </section>
+    
+    <style>
+    .portfolio-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .portfolio-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .portfolio-info {
+      padding: 20px;
+      background: #fff;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .portfolio-info h4 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    
+    .portfolio-info p {
+      margin-bottom: 0;
+      color: #666;
+    }
+    
+    .isotope-item {
+      display: none;
+    }
+    
+    .isotope-item.all-showcase {
+      display: block;
+    }
+    </style>
+    
+    <script>
+    // Initialize Isotope
+    document.addEventListener('DOMContentLoaded', function() {
+      // First hide all items except the showcase ones
+      document.querySelectorAll('.isotope-item:not(.all-showcase)').forEach(item => {
+        item.style.display = 'none';
+      });
+      
+      // Initialize Isotope if it's included in your project
+      if (typeof Isotope !== 'undefined') {
+        const iso = new Isotope('.isotope-container', {
+          itemSelector: '.isotope-item',
+          layoutMode: 'fitRows'
+        });
+        
+        // Filter items on button click
+        document.querySelectorAll('.portfolio-filters li').forEach(filterBtn => {
+          filterBtn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            document.querySelectorAll('.portfolio-filters li').forEach(btn => {
+              btn.classList.remove('filter-active');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('filter-active');
+            
+            // Get filter value
+            const filterValue = this.getAttribute('data-filter');
+            
+            if (filterValue === '*') {
+              // For "All" filter, only show showcase items
+              document.querySelectorAll('.isotope-item').forEach(item => {
+                if (item.classList.contains('all-showcase')) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+              iso.layout();
+            } else {
+              // For category filters, show all items in that category
+              document.querySelectorAll('.isotope-item').forEach(item => {
+                if (item.classList.contains(filterValue.replace('.', ''))) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+              iso.layout();
+            }
+          });
+        });
+      } else {
+        // Fallback if Isotope is not available
+        document.querySelectorAll('.portfolio-filters li').forEach(filterBtn => {
+          filterBtn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            document.querySelectorAll('.portfolio-filters li').forEach(btn => {
+              btn.classList.remove('filter-active');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('filter-active');
+            
+            // Get filter value
+            const filterValue = this.getAttribute('data-filter');
+            
+            if (filterValue === '*') {
+              // For "All" filter, only show showcase items
+              document.querySelectorAll('.isotope-item').forEach(item => {
+                if (item.classList.contains('all-showcase')) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+            } else {
+              // For category filters, show all items in that category
+              document.querySelectorAll('.isotope-item').forEach(item => {
+                if (item.classList.contains(filterValue.replace('.', ''))) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+            }
+          });
+        });
+      }
+    });
+    </script>
+
+    <!-- Pricing Section --
+
+  <section id="pricing" class="pricing section">
+
+
+
+   <!-- Section Title --
+
+   <div class="container section-title" data-aos="fade-up">
+
+    <h2>Pricing</h2>
+
+    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+   </div><!-- End Section Title --
+
+
+
+   <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+
+
+    <div class="row g-4">
+
+
+
+     <div class="col-lg-4">
+
+      <div class="pricing-item">
+
+       <h3>Free Plan</h3>
+
+       <div class="icon">
+
+        <i class="bi bi-box"></i>
+
+       </div>
+
+       <h4><sup>$</sup>0<span> / month</span></h4>
+
+       <ul>
+
+        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+
+        <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+
+        <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+
+       </ul>
+
+       <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+
+      </div>
+
+     </div><!-- End Pricing Item --
+
+
+
+     <div class="col-lg-4">
+
+      <div class="pricing-item featured">
+
+       <h3>Business Plan</h3>
+
+       <div class="icon">
+
+        <i class="bi bi-rocket"></i>
+
+       </div>
+
+
+
+       <h4><sup>$</sup>29<span> / month</span></h4>
+
+       <ul>
+
+        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+
+       </ul>
+
+       <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+
+      </div>
+
+     </div><!-- End Pricing Item --
+
+
+
+     <div class="col-lg-4">
+
+      <div class="pricing-item">
+
+       <h3>Developer Plan</h3>
+
+       <div class="icon">
+
+        <i class="bi bi-send"></i>
+
+       </div>
+
+       <h4><sup>$</sup>49<span> / month</span></h4>
+
+       <ul>
+
+        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+
+        <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+
+       </ul>
+
+       <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+
+      </div>
+
+     </div><!-- End Pricing Item --
+
+
+
+    </div>
+
+
+
+   </div>
+
+
+
+  </section><!-- /Pricing Section -->
+
+
+
+    <!-- Faq Section --
+
+    <section id="faq" class="faq section">
+
+
+
+      <div class="container">
+
+
+
+        <div class="row gy-4">
+
+
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="content px-xl-5">
+
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+
+              <p style="text-align: justify;">
+
+                Find answers to common questions about Sarvam Educational Trust, our initiatives, and how you can
+                support our mission to empower rural communities.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+
+                <h3><span class="num">1.</span> <span>What is Sarvam NGO?</span></h3>
+
+                <div class="faq-content">
+
+                  <p style="text-align: justify;">Sarvam is a rural development initiative focused on education, women's
+                    empowerment, healthcare, skill development, and sustainable livelihoods. We work to create
+                    self-sufficient rural communities through holistic development programs.</p>
+
+                </div>
+
+                <i class="faq-toggle bi bi-chevron-right"></i>
+
+              </div><!-- End Faq item--
+
+
+              <div class="faq-item">
+
+                <h3><span class="num">2.</span> <span>What are Sarvam's focus areas?</span></h3>
+
+                <div class="faq-content">
+
+                  <p style="text-align: justify;">Our primary focus areas include education (especially for
+                    underprivileged children), women's empowerment programs, healthcare initiatives, skill development
+                    training, and creating sustainable livelihood opportunities in rural communities.</p>
+
+                </div>
+
+                <i class="faq-toggle bi bi-chevron-right"></i>
+
+              </div><!-- End Faq item--
+
+
+
+              <div class="faq-item">
+
+                <h3><span class="num">3.</span> <span>How can I volunteer with Sarvam?</span></h3>
+
+                <div class="faq-content">
+
+                  <p style="text-align: justify;">Volunteers from all backgrounds can contribute by teaching, organizing
+                    events, or offering professional skills training. We welcome both short-term and long-term
+                    volunteers. You can apply through our website or contact us directly to discuss available
+                    opportunities.</p>
+
+                </div>
+
+                <i class="faq-toggle bi bi-chevron-right"></i>
+
+              </div><!-- End Faq item
+
+
+
+              <div class="faq-item">
+
+                <h3><span class="num">4.</span> <span>How does Sarvam ensure accountability and transparency?</span>
+                </h3>
+
+                <div class="faq-content">
+
+                  <p style="text-align: justify;">We maintain strict financial audits, publish annual impact reports,
+                    and ensure efficient fund utilization for community welfare. Our operations are regularly reviewed,
+                    and we provide donors with detailed updates on how their contributions are making a difference.</p>
+
+                </div>
+
+                <i class="faq-toggle bi bi-chevron-right"></i>
+
+              </div><!-- End Faq item
+
+
+
+              <div class="faq-item">
+
+                <h3><span class="num">5.</span> <span>What are your NGO's long-term goals?</span></h3>
+
+                <div class="faq-content">
+
+                  <p style="text-align: justify;">Our long-term vision is to expand our impact, create self-sustainable
+                    communities, and implement scalable solutions for social issues. We aim to establish model villages
+                    that demonstrate how integrated development programs can transform rural areas.</p>
+
+                </div>
+
+                <i class="faq-toggle bi bi-chevron-right"></i>
+
+              </div><!-- End Faq item
+
+
+
+              <div class="faq-item">
+
+                <h3><span class="num">6.</span> <span>How can I stay updated on Sarvam's work?</span></h3>
+
+                <div class="faq-content">
+
+                  <p style="text-align: justify;">You can follow us on social media platforms, subscribe to our monthly
+                    newsletter, or regularly visit our official website for project updates, success stories, and
+                    upcoming events. We also share annual reports and impact assessments with our supporters.</p>
+
+                </div>
+
+                <i class="faq-toggle bi bi-chevron-right"></i>
+
+              </div><!-- End Faq item
+
+
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </section> Faq Section -->
+
+
+    <!-- Team Section 
+
+  <!-- <section id="team" class="team section light-background">
+
+
+
+   <!-- Section Title -
+
+   <div class="container section-title" data-aos="fade-up">
+
+    <h2>Team</h2>
+
+    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+   </div><!-- End Section Title --
+
+
+
+   <div class="container">
+
+
+
+    <div class="row gy-5">
+
+
+
+     <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="member-img">
+
+       <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+
+       <div class="social">
+
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+        <a href="#"><i class="bi bi-facebook"></i></a>
+
+        <a href="#"><i class="bi bi-instagram"></i></a>
+
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+
+       </div>
+
+      </div>
+
+      <div class="member-info text-center">
+
+       <h4>Walter White</h4>
+
+       <span>Chief Executive Officer</span>
+
+       <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
+
+      </div>
+
+     </div><!-- End Team Member --
+
+
+
+     <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="member-img">
+
+       <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+
+       <div class="social">
+
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+        <a href="#"><i class="bi bi-facebook"></i></a>
+
+        <a href="#"><i class="bi bi-instagram"></i></a>
+
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+
+       </div>
+
+      </div>
+
+      <div class="member-info text-center">
+
+       <h4>Sarah Jhonson</h4>
+
+       <span>Product Manager</span>
+
+       <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
+
+      </div>
+
+     </div><!-- End Team Member --
+
+
+
+     <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+
+      <div class="member-img">
+
+       <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+
+       <div class="social">
+
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+        <a href="#"><i class="bi bi-facebook"></i></a>
+
+        <a href="#"><i class="bi bi-instagram"></i></a>
+
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+
+       </div>
+
+      </div>
+
+      <div class="member-info text-center">
+
+       <h4>William Anderson</h4>
+
+       <span>CTO</span>
+
+       <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
+
+      </div>
+
+     </div><!-- End Team Member --
+
+
+
+     <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+
+      <div class="member-img">
+
+       <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+
+       <div class="social">
+
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+        <a href="#"><i class="bi bi-facebook"></i></a>
+
+        <a href="#"><i class="bi bi-instagram"></i></a>
+
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+
+       </div>
+
+      </div>
+
+      <div class="member-info text-center">
+
+       <h4>Amanda Jepson</h4>
+
+       <span>Accountant</span>
+
+       <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
+
+      </div>
+
+     </div><!-- End Team Member --
+
+
+
+     <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+
+      <div class="member-img">
+
+       <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+
+       <div class="social">
+
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+        <a href="#"><i class="bi bi-facebook"></i></a>
+
+        <a href="#"><i class="bi bi-instagram"></i></a>
+
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+
+       </div>
+
+      </div>
+
+      <div class="member-info text-center">
+
+       <h4>Brian Doe</h4>
+
+       <span>Marketing</span>
+
+       <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
+
+      </div>
+
+     </div><!-- End Team Member --
+
+
+
+     <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+
+      <div class="member-img">
+
+       <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+
+       <div class="social">
+
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+        <a href="#"><i class="bi bi-facebook"></i></a>
+
+        <a href="#"><i class="bi bi-instagram"></i></a>
+
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+
+       </div>
+
+      </div>
+
+      <div class="member-info text-center">
+
+       <h4>Josepha Palas</h4>
+
+       <span>Operation</span>
+
+       <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
+
+      </div>
+
+     </div><!-- End Team Member --
+
+
+
+    </div>
+
+
+
+   </div>
+
+
+
+  </section>/Team Section -->
+
+
+
+    <!-- Call To Action Section -->
+
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+
+
+      <img src="assets\img\statsbg1.jpg" alt="">
+
+
+
+      <div class="container">
+
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-xl-10">
+
+            <div class="text-center">
+
+              <h3>Join your hands with us</h3>
+
+              <p>At Sarvam NGO, we believe every individual deserves access to education, healthcare, and
+                empowerment—regardless of their background. But we can’t do it alone.When you volunteer or support our
+                initiatives, you become a catalyst for change. Your involvement helps
+                children go to school, families receive basic medical aid, and communities grow stronger with the tools
+                they need to thrive.</p>
+
+              <a class="cta-btn" href="Register.html">Register now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </section><!-- /Call To Action Section -->
+
+
+
+    <!-- Testimonials Section 
+
+    <section id="testimonials" class="testimonials section light-background">
+
+
+
+      <div class="container">
+
+
+
+        <div class="row align-items-center">
+
+
+
+          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+
+            <h3>What People Say</h3>
+
+            <p style="text-align: justify;">
+
+              Hear from the beneficiaries, volunteers, and partners who have experienced the impact of Sarvam
+              Educational Trust's
+
+              initiatives firsthand. Their stories reflect our commitment to transforming lives through education and
+              empowerment.
+
+            </p>
+
+            <div class="text-center mt-4">
+
+              <a href="donate.html" class="btn btn-primary">Support Our Cause</a>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+
+
+            <div class="swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+
+        {
+
+         "loop": true,
+
+         "speed": 600,
+
+         "autoplay": {
+
+          "delay": 5000
+
+         },
+
+         "slidesPerView": "auto",
+
+         "pagination": {
+
+          "el": ".swiper-pagination",
+
+          "type": "bullets",
+
+          "clickable": true
+
+         }
+
+        }
+
+       </script>
+
+              <div class="swiper-wrapper">
+
+
+
+                <div class="swiper-slide">
+
+                  <div class="testimonial-item">
+
+                    <div class="d-flex">
+
+                      <img src="assets/img/testimonials/student-1.jpg" class="testimonial-img flex-shrink-0"
+                        alt="Student testimonial">
+
+                      <div>
+
+                        <h3>Priya M.</h3>
+
+                        <h4>Scholarship Recipient</h4>
+
+                        <div class="stars">
+
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <p>
+
+                      <i class="bi bi-quote quote-icon-left"></i>
+
+                      <span>Sarvam's scholarship program changed my life. Without their support, I couldn't have pursued
+                        my engineering degree. Today I'm the first graduate in my family, all thanks to their belief in
+                        me.</span>
+
+                      <i class="bi bi-quote quote-icon-right"></i>
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+
+                <div class="swiper-slide">
+
+                  <div class="testimonial-item">
+
+                    <div class="d-flex">
+
+                      <img src="assets/img/testimonials/volunteer-1.jpg" class="testimonial-img flex-shrink-0"
+                        alt="Volunteer testimonial">
+
+                      <div>
+
+                        <h3>Arjun K.</h3>
+
+                        <h4>Volunteer</h4>
+
+                        <div class="stars">
+
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <p>
+
+                      <i class="bi bi-quote quote-icon-left"></i>
+
+                      <span>Volunteering with Sarvam has been incredibly rewarding. Their rural education programs are
+                        making real differences in communities. The dedication of their team inspires me to do
+                        more.</span>
+
+                      <i class="bi bi-quote quote-icon-right"></i>
+
+                    </p>
+
+                  </div>
+
+                </div>
+                 <!-End testimonial item 
+
+
+
+
+                <div class="swiper-slide">
+
+                  <div class="testimonial-item">
+
+                    <div class="d-flex">
+
+                      <img src="assets/img/testimonials/partner-1.jpg" class="testimonial-img flex-shrink-0"
+                        alt="Partner testimonial">
+
+                      <div>
+
+                        <h3>Sunitha R.</h3>
+
+                        <h4>Corporate Partner</h4>
+
+                        <div class="stars">
+
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <p>
+
+                      <i class="bi bi-quote quote-icon-left"></i>
+
+                      <span>Our company has partnered with Sarvam for 3 years, and their transparency and impact are
+                        unmatched. They've helped us implement meaningful CSR initiatives that truly benefit
+                        communities.</span>
+
+                      <i class="bi bi-quote quote-icon-right"></i>
+
+                    </p>
+
+                  </div>
+
+                </div><!-- End testimonial item 
+
+
+
+                <div class="swiper-slide">
+
+                  <div class="testimonial-item">
+
+                    <div class="d-flex">
+
+                      <img src="assets/img/testimonials/parent-1.jpg" class="testimonial-img flex-shrink-0"
+                        alt="Parent testimonial">
+
+                      <div>
+
+                        <h3>Rajesh V.</h3>
+
+                        <h4>Parent</h4>
+
+                        <div class="stars">
+
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <p>
+
+                      <i class="bi bi-quote quote-icon-left"></i>
+
+                      <span>Sarvam's after-school program gave my daughter confidence and academic support we couldn't
+                        provide. Her grades improved dramatically and she's now aspiring to college - a dream we thought
+                        impossible.</span>
+
+                      <i class="bi bi-quote quote-icon-right"></i>
+
+                    </p>
+
+                  </div>
+
+                </div><!- End testimonial item 
+
+
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </section> /Testimonials Section -->
+
+
+
+    <!--Recent Posts Section --
+    <section id="recent-posts" class="recent-posts section">
+
+      <!-- Section Title 
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recent Updates</h2>
+        <p>Stay informed about our latest initiatives and impact in rural communities</p>
+      </div><!-- End Section Title -
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/blog/education-update.jpg" alt="Children learning in rural classroom"
+                  class="img-fluid">
+              </div>
+              <p class="post-category">Education</p>
+              <h2 class="title">
+                <a href="blog-details.html">Mobile Learning Vans Reach Remote Villages</a>
+              </h2>
+              <div class="d-flex align-items-center">
+                <img src="assets/img/team/education-head.jpg" alt="Education Coordinator"
+                  class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Ramesh Kumar</p>
+                  <p class="post-date">
+                    <time datetime="2024-05-15">May 15, 2024</time>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post list item -
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/blog/women-empowerment.jpg" alt="Women in vocational training" class="img-fluid">
+              </div>
+              <p class="post-category">Empowerment</p>
+              <h2 class="title">
+                <a href="blog-details.html">120 Women Graduate From Vocational Program</a>
+              </h2>
+              <div class="d-flex align-items-center">
+                <img src="assets/img/team/women-coordinator.jpg" alt="Women's Coordinator"
+                  class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Priya Sharma</p>
+                  <p class="post-date">
+                    <time datetime="2024-04-28">Apr 28, 2024</time>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post list item --
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article>
+              <div class="post-img">
+                <img src="assets/img/blog/environment-project.jpg" alt="Tree plantation activity" class="img-fluid">
+              </div>
+              <p class="post-category">Environment</p>
+              <h2 class="title">
+                <a href="blog-details.html">1000+ Saplings Planted in Green Initiative</a>
+              </h2>
+              <div class="d-flex align-items-center">
+                <img src="assets/img/team/environment-head.jpg" alt="Environment Head"
+                  class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Arjun Patel</p>
+                  <p class="post-date">
+                    <time datetime="2024-03-22">Mar 22, 2024</time>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post list item 
+
+        </div><-- End recent posts list 
+      </div>
+    </section>
+
+    <style>
+      .recent-posts .post-img {
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .recent-posts .post-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .recent-posts article:hover .post-img img {
+        transform: scale(1.05);
+      }
+
+      .post-category {
+        color: #4e54c8;
+        font-weight: 600;
+        margin: 15px 0 5px;
+      }
+
+      .recent-posts .title {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+      .recent-posts .title a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .recent-posts .title a:hover {
+        color: #148aea;
+      }
+
+      .post-author-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .recent-posts .post-img {
+          height: 150px;
+        }
+      }
+    </style> /Recent Posts Section-->
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact section">
+
+
+
+      <!-- Section Title -->
+
+      <div class="container section-title" data-aos="fade-up" data-aos-duration="800">
+
+        <h2 class="title-animate">Contact Us</h2>
+
+        <p class="subtitle-animate">Get in touch with us for inquiries, collaborations, or to support our initiatives
+        </p>
+
+      </div><!-- End Section Title -->
+
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+
+
+        <div class="row gy-4">
+
+
+
+          <div class="col-lg-6">
+
+
+
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+
+                <div class="info-item hover-3d" data-aos="fade-right" data-aos-delay="200">
+
+                  <div class="icon-wrapper">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <div class="pulse-effect"></div>
+
+                  </div>
+
+                  <h3>Address</h3>
+
+                  <p>No: 17/2016, Park Street,</p>
+
+                  <p>Aanjaneya Complex, 1st Floor, Namakkal - 637001</p>
+
+                  <div class="hover-line"></div>
+
+                </div>
+
+              </div><!-- End Info Item -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="info-item hover-3d" data-aos="fade-right" data-aos-delay="250">
+
+                  <div class="icon-wrapper">
+
+                    <i class="bi bi-telephone"></i>
+
+                    <div class="pulse-effect"></div>
+
+                  </div>
+
+                  <h3>Call Us</h3>
+
+                  <p>+91-99526 48847</p>
+
+                  <div class="hover-line"></div>
+
+                </div>
+
+              </div><!-- End Info Item -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="info-item hover-3d" data-aos="fade-right" data-aos-delay="300">
+
+                  <div class="icon-wrapper">
+
+                    <i class="bi bi-envelope"></i>
+
+                    <div class="pulse-effect"></div>
+
+                  </div>
+
+                  <h3>Email Us</h3>
+
+                  <p>sarvamngo19@gmail.com</p>
+
+                  <div class="hover-line"></div>
+
+                </div>
+
+              </div><!-- End Info Item -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="info-item hover-3d" data-aos="fade-right" data-aos-delay="350">
+
+                  <div class="icon-wrapper">
+
+                    <i class="bi bi-clock"></i>
+
+                    <div class="pulse-effect"></div>
+
+                  </div>
+
+                  <h3>Open Hours</h3>
+
+                  <p>Monday - Saturday</p>
+
+                  <p>9:00AM - 06:00PM</p>
+
+                  <div class="hover-line"></div>
+
+                </div>
+
+              </div><!-- End Info Item -->
+
+
+
+            </div>
+
+
+
+          </div>
+
+
+
+          <div class="col-lg-6">
+
+            <!-- <form action="forms/contact.php" method="post" class="php-email-form form-animate" data-aos="fade-left"
+              data-aos-delay="200">
+
+              <div class="row gy-4">
+
+
+
+                <div class="col-md-6">
+
+                  <div class="form-group floating-label">
+
+                    <input type="text" name="name" class="form-control" id="name" required>
+
+                    <label for="name">Your Name</label>
+
+                    <div class="focus-line"></div>
+
+                  </div>
+
+                </div>
+
+
+
+                <div class="col-md-6">
+
+                  <div class="form-group floating-label">
+
+                    <input type="email" class="form-control" name="email" id="email" required>
+
+                    <label for="email">Your Email</label>
+
+                    <div class="focus-line"></div>
+
+                  </div>
+
+                </div>
+
+
+
+                <div class="col-12">
+
+                  <div class="form-group floating-label">
+
+                    <input type="text" class="form-control" name="subject" id="subject" required>
+
+                    <label for="subject">Subject</label>
+
+                    <div class="focus-line"></div>
+
+                  </div>
+
+                </div>
+
+
+
+                <div class="col-12">
+
+                  <div class="form-group floating-label">
+
+                    <textarea class="form-control" name="message" id="message" rows="6" required></textarea>
+
+                    <label for="message">Your Message</label>
+
+                    <div class="focus-line"></div>
+
+                  </div>
+
+                </div>
+
+
+
+                <div class="col-12 text-center">
+
+                  <div class="loading">Loading</div>
+
+                  <div class="error-message"></div>
+
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+
+
+                  <button type="submit" class="btn-magnetic">
+
+                    <span class="btn-text">Send Message</span>
+
+                    <span class="btn-icon"><i class="bi bi-send-fill"></i></span>
+
+                    <span class="magnetic-area"></span>
+
+                  </button>
+
+                </div>
+
+
+
+              </div>
+
+            </form> -->
+            <!-- <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="51f6e9fd-0ee8-4442-89eb-1e4378cc2cb1">
+              <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+            
+            
+              <div class="row gy-4">
+            
+                <div class="col-md-6">
+                  <div class="form-group floating-label">
+                    <input type="text" name="name" class="form-control" id="name" required>
+                    <label for="name">Your Name</label>
+                    <div class="focus-line"></div>
+                  </div>
+                </div>
+            
+                <div class="col-md-6">
+                  <div class="form-group floating-label">
+                    <input type="email" class="form-control" name="email" id="email" required>
+                    <label for="email">Your Email</label>
+                    <div class="focus-line"></div>
+                  </div>
+                </div>
+            
+                <div class="col-12">
+                  <div class="form-group floating-label">
+                    <input type="text" class="form-control" name="subject" id="subject" required>
+                    <label for="subject">Subject</label>
+                    <div class="focus-line"></div>
+                  </div>
+                </div>
+            
+                <div class="col-12">
+                  <div class="form-group floating-label">
+                    <textarea class="form-control" name="message" id="message" rows="6" required></textarea>
+                    <label for="message">Your Message</label>
+                    <div class="focus-line"></div>
+                  </div>
+                </div>
+            
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+            
+                  <button type="submit" class="btn-magnetic">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon"><i class="bi bi-send-fill"></i></span>
+                    <span class="magnetic-area"></span>
+                  </button>
+                </div>
+            
+              </div>
+            </form> -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="51f6e9fd-0ee8-4442-89eb-1e4378cc2cb1">
+
+              <!-- Your Form Fields -->
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="form-group floating-label">
+                    <input type="text" name="name" class="form-control" id="name" required>
+                    <label for="name">Your Name</label>
+                    <div class="focus-line"></div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group floating-label">
+                    <input type="email" class="form-control" name="email" id="email" required>
+                    <label for="email">Your Email</label>
+                    <div class="focus-line"></div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group floating-label">
+                    <input type="text" class="form-control" name="subject" id="subject" required>
+                    <label for="subject">Subject</label>
+                    <div class="focus-line"></div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group floating-label">
+                    <textarea class="form-control" name="message" id="message" rows="6" required></textarea>
+                    <label for="message">Your Message</label>
+                    <div class="focus-line"></div>
+                  </div>
+                </div>
+
+                <div class="col-12 text-center">
+                  <div class="loading"></div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit" class="btn-magnetic">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon"><i class="bi bi-send-fill"></i></span>
+                    <span class="magnetic-area"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- <script>
+              const form = document.querySelector("form");
+              const loading = document.querySelector(".loading");
+              const errorMessage = document.querySelector(".error-message");
+              const sentMessage = document.querySelector(".sent-message");
+          
+              form.addEventListener("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission (no redirect)
+          
+                loading.style.display = "block";
+                errorMessage.style.display = "none";
+                sentMessage.style.display = "none";
+          
+                const formData = new FormData(form);
+          
+                fetch("https://api.web3forms.com/submit", {
+                  method: "POST",
+                  body: formData,
+                  headers: {
+                    "Accept": "application/json"
+                  }
+                }).then(response => {
+                  loading.style.display = "none";
+                  if (response.ok) {
+                    sentMessage.style.display = "block";
+                    form.reset();
+                  } else {
+                    response.json().then(data => {
+                      errorMessage.textContent = data.message || "Something went wrong.";
+                      errorMessage.style.display = "block";
+                    });
+                  }
+                }).catch(() => {
+                  loading.style.display = "none";
+                  errorMessage.textContent = "Network error. Please try again.";
+                  errorMessage.style.display = "block";
+                });
+              });
+            </script> -->
+            <!-- The Modal for Success Popup -->
+            <div id="successModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Your message has been sent. Thank you!</h2>
+              </div>
+            </div>
+            <style>
+              /* Animation Styles */
+              .title-animate {
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+              }
+
+              .subtitle-animate {
+                animation: fade-in 1.2s ease-in-out both;
+                animation-delay: 0.3s;
+              }
+
+              @keyframes text-focus-in {
+                0% {
+                  filter: blur(12px);
+                  opacity: 0;
+                }
+
+                100% {
+                  filter: blur(0px);
+                  opacity: 1;
+                }
+              }
+
+              @keyframes fade-in {
+                0% {
+                  opacity: 0;
+                }
+
+                100% {
+                  opacity: 1;
+                }
+              }
+
+              /* Form Styles */
+              .form-animate {
+                animation: slide-in-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              }
+
+              @keyframes slide-in-right {
+                0% {
+                  transform: translateX(100px);
+                  opacity: 0;
+                }
+
+                100% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+
+              .floating-label {
+                position: relative;
+                margin-bottom: 25px;
+              }
+
+              .floating-label label {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                color: #999;
+                transition: all 0.3s ease;
+                pointer-events: none;
+              }
+
+              .floating-label input:focus~label,
+              .floating-label input:valid~label,
+              .floating-label textarea:focus~label,
+              .floating-label textarea:valid~label {
+                top: -10px;
+                left: 10px;
+                font-size: 12px;
+                background: white;
+                padding: 0 5px;
+                color: #4e54c8;
+              }
+
+              .focus-line {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+                transition: width 0.4s ease;
+              }
+
+              .floating-label input:focus~.focus-line,
+              .floating-label textarea:focus~.focus-line {
+                width: 100%;
+              }
+
+              /* Button Styles */
+              .btn-magnetic {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 30px;
+                background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+                color: white;
+                border: none;
+                border-radius: 50px;
+                font-weight: 600;
+                overflow: hidden;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+              }
+
+              .btn-magnetic:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 25px rgba(78, 84, 200, 0.6);
+              }
+
+              .btn-magnetic .btn-icon {
+                margin-left: 10px;
+                transform: translateX(0);
+                transition: transform 0.3s ease;
+              }
+
+              .btn-magnetic:hover .btn-icon {
+                transform: translateX(5px);
+              }
+
+              .magnetic-area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+              }
+
+              /* Status Messages */
+              .loading,
+              .error-message,
+              .sent-message {
+                display: none;
+                padding: 10px;
+                margin-bottom: 15px;
+                border-radius: 4px;
+              }
+
+              .loading {
+                color: #4e54c8;
+              }
+
+              .error-message {
+                color: #dc3545;
+                background: #f8d7da;
+              }
+
+              .sent-message {
+                color: #28a745;
+                background: #d4edda;
+              }
+            </style>
+
+            <script>
+              const form = document.querySelector("form");
+              const loading = document.querySelector(".loading");
+              const errorMessage = document.querySelector(".error-message");
+
+              // Modal elements
+              const modal = document.getElementById("successModal");
+              const closeModal = document.querySelector(".close");
+
+              form.addEventListener("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission (no redirect)
+
+                loading.style.display = "block";
+                errorMessage.style.display = "none";
+
+                const formData = new FormData(form);
+
+                fetch("https://api.web3forms.com/submit", {
+                  method: "POST",
+                  body: formData,
+                  headers: {
+                    "Accept": "application/json"
+                  }
+                }).then(response => {
+                  loading.style.display = "none";
+                  if (response.ok) {
+                    modal.style.display = "block"; // Show the success popup
+                    form.reset();
+                  } else {
+                    response.json().then(data => {
+                      errorMessage.textContent = data.message || "Something went wrong.";
+                      errorMessage.style.display = "block";
+                    });
+                  }
+                }).catch(() => {
+                  loading.style.display = "none";
+                  errorMessage.textContent = "Network error. Please try again.";
+                  errorMessage.style.display = "block";
+                });
+              });
+
+              // When the user clicks on <span> (x), close the modal
+              closeModal.onclick = function () {
+                modal.style.display = "none";
+              }
+
+              // When the user clicks anywhere outside the modal, close it
+              window.onclick = function (event) {
+                if (event.target === modal) {
+                  modal.style.display = "none";
+                }
+              }
+            </script>
+          </div><!-- End Contact Form -->
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </section>
+
+    <style>
+      /* Animation Styles */
+
+      .title-animate {
+
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+      }
+
+
+
+      .subtitle-animate {
+
+        animation: fade-in 1.2s ease-in-out both;
+
+        animation-delay: 0.3s;
+
+      }
+
+
+
+      @keyframes text-focus-in {
+
+        0% {
+
+          filter: blur(12px);
+
+          opacity: 0;
+
+        }
+
+        100% {
+
+          filter: blur(0px);
+
+          opacity: 1;
+
+        }
+
+      }
+
+
+
+      @keyframes fade-in {
+
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+
+      }
+
+
+
+      /* Info Item Styles */
+
+      .info-item {
+
+        position: relative;
+
+        padding: 30px;
+
+        background: #fff;
+
+        border-radius: 10px;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+        transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+        overflow: hidden;
+
+        z-index: 1;
+
+      }
+
+
+
+      .info-item::before {
+
+        content: '';
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: linear-gradient(135deg, rgba(78, 84, 200, 0.1) 0%, rgba(143, 148, 251, 0.1) 100%);
+
+        z-index: -1;
+
+        transform: scaleY(0);
+
+        transform-origin: bottom;
+
+        transition: transform 0.5s ease;
+
+      }
+
+
+
+      .info-item:hover {
+
+        transform: translateY(-5px);
+
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+      }
+
+
+
+      .info-item:hover::before {
+
+        transform: scaleY(1);
+
+      }
+
+
+
+      .icon-wrapper {
+
+        position: relative;
+
+        width: 60px;
+
+        height: 60px;
+
+        margin-bottom: 20px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        background: whitesmoke;
+
+        color: white;
+
+        border-radius: 50%;
+
+        font-size: 24px;
+
+      }
+
+
+
+      .pulse-effect {
+
+        position: absolute;
+
+        width: 100%;
+
+        height: 100%;
+
+        border-radius: 50%;
+
+        background: inherit;
+
+        opacity: 0;
+
+        z-index: -1;
+
+        animation: pulse 2s infinite;
+
+      }
+
+
+
+      @keyframes pulse {
+
+        0% {
+
+          transform: scale(0.8);
+
+          opacity: 0.7;
+
+        }
+
+        70% {
+
+          transform: scale(1.3);
+
+          opacity: 0;
+
+        }
+
+        100% {
+
+          transform: scale(0.8);
+
+          opacity: 0;
+
+        }
+
+      }
+
+
+
+      .hover-line {
+
+        position: absolute;
+
+        bottom: 0;
+
+        left: 0;
+
+        width: 0;
+
+        height: 3px;
+
+        background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+
+        transition: width 0.3s ease;
+
+      }
+
+
+
+      .info-item:hover .hover-line {
+
+        width: 100%;
+
+      }
+
+
+
+      /* Form Styles */
+
+      .form-animate {
+
+        animation: slide-in-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+      }
+
+
+
+      @keyframes slide-in-right {
+
+        0% {
+
+          transform: translateX(100px);
+
+          opacity: 0;
+
+        }
+
+        100% {
+
+          transform: translateX(0);
+
+          opacity: 1;
+
+        }
+
+      }
+
+
+
+      .floating-label {
+
+        position: relative;
+
+        margin-bottom: 25px;
+
+      }
+
+
+
+      .floating-label label {
+
+        position: absolute;
+
+        top: 15px;
+
+        left: 15px;
+
+        color: #999;
+
+        transition: all 0.3s ease;
+
+        pointer-events: none;
+
+      }
+
+
+
+      .floating-label input:focus~label,
+
+      .floating-label input:valid~label,
+
+      .floating-label textarea:focus~label,
+
+      .floating-label textarea:valid~label {
+
+        top: -10px;
+
+        left: 10px;
+
+        font-size: 12px;
+
+        background: white;
+
+        padding: 0 5px;
+
+        color: #4e54c8;
+
+      }
+
+
+
+      .focus-line {
+
+        position: absolute;
+
+        bottom: 0;
+
+        left: 0;
+
+        width: 0;
+
+        height: 2px;
+
+        background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+
+        transition: width 0.4s ease;
+
+      }
+
+
+
+      .floating-label input:focus~.focus-line,
+
+      .floating-label textarea:focus~.focus-line {
+
+        width: 100%;
+
+      }
+
+
+
+      /* Button Styles */
+
+      .btn-magnetic {
+
+        position: relative;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 12px 30px;
+
+        background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+
+        color: white;
+
+        border: none;
+
+        border-radius: 50px;
+
+        font-weight: 600;
+
+        overflow: hidden;
+
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+
+      }
+
+
+
+      .btn-magnetic:hover {
+
+        transform: translateY(-3px);
+
+        box-shadow: 0 8px 25px rgba(78, 84, 200, 0.6);
+
+      }
+
+
+
+      .btn-magnetic .btn-icon {
+
+        margin-left: 10px;
+
+        transform: translateX(0);
+
+        transition: transform 0.3s ease;
+
+      }
+
+
+
+      .btn-magnetic:hover .btn-icon {
+
+        transform: translateX(5px);
+
+      }
+
+
+
+      .magnetic-area {
+
+        position: absolute;
+
+        width: 100%;
+
+        height: 100%;
+
+        top: 0;
+
+        left: 0;
+
+        pointer-events: none;
+
+      }
+    </style>
+
+
+
+    <script>
+
+      // Magnetic button effect
+
+      document.querySelectorAll('.btn-magnetic').forEach(button => {
+
+        button.addEventListener('mousemove', (e) => {
+
+          const rect = button.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+
+          const y = e.clientY - rect.top;
+
+
+
+          button.style.setProperty('--x', `${x}px`);
+
+          button.style.setProperty('--y', `${y}px`);
+
+
+
+          const centerX = rect.width / 2;
+
+          const centerY = rect.height / 2;
+
+          const distanceX = x - centerX;
+
+          const distanceY = y - centerY;
+
+
+
+          button.style.transform = `translate(${distanceX * 0.1}px, ${distanceY * 0.1}px)`;
+
+        });
+
+
+
+        button.addEventListener('mouseleave', () => {
+
+          button.style.transform = 'translate(0, 0)';
+
+        });
+
+      });
+
+    </script>
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+    </section><!-- /Contact Section -->
+
+
+
+  </main>
+
+
+
+  <footer id="footer" class="footer position-relative light-background">
+
+
+
+    <!-- Floating Background Elements -->
+
+    <div class="footer-bg-elements">
+
+      <div class="bg-circle circle-1"></div>
+
+      <div class="bg-circle circle-2"></div>
+
+      <div class="bg-circle circle-3"></div>
+
+      <div class="bg-wave wave-1"></div>
+
+      <div class="bg-wave wave-2"></div>
+
+    </div>
+
+
+
+    <div class="container footer-top">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-5 col-md-12 footer-about" data-aos="fade-up" data-aos-delay="100">
+
+          <a href="index.html" class="logo d-flex align-items-center logo-animate">
+
+            <span class="sitename">Sarvam Educational Trust</span>
+
+            <div class="logo-underline"></div>
+
+          </a>
+
+          <p class="footer-description">Empowering communities through social welfare initiatives. Join us in our
+            mission to create a better future for all.</p>
+
+          <div class="social-links d-flex mt-4">
+
+            <a href="#" class="social-icon twitter"><i class="bi bi-twitter-x"></i></a>
+
+            <a href="#" class="social-icon facebook"><i class="bi bi-facebook"></i></a>
+
+            <a href="#" class="social-icon instagram"><i class="bi bi-instagram"></i></a>
+
+            <a href="#" class="social-icon linkedin"><i class="bi bi-linkedin"></i></a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-lg-2 col-6 footer-links" data-aos="fade-up" data-aos-delay="200">
+
+          <h4 class="footer-heading">Quick Links</h4>
+
+          <ul>
+
+            <li><a href="index.html#hero" class="nav-link hover-underline"><span>Home</span></a></li>
+
+            <li><a href="index.html#about" class="nav-link hover-underline"><span>About</span></a></li>
+
+            <li><a href="index.html#portfolio" class="nav-link hover-underline"><span>Works</span></a></li>
+
+            <li><a href="blog.html" class="nav-link hover-underline"><span>Blog</span></a></li>
+
+            <li><a href="index.html#contact" class="nav-link hover-underline"><span>Contact</span></a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="col-lg-2 col-6 footer-links" data-aos="fade-up" data-aos-delay="300">
+
+          <h4 class="footer-heading">Legal</h4>
+
+          <ul>
+
+            <li><a href="terms-conditon.html" class="nav-link hover-underline"><span>Terms and Conditions</span></a>
+            </li>
+
+            <li><a href="privacy.html" class="nav-link hover-underline"><span>Privacy Policy</span></a></li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start" data-aos="fade-up"
+          data-aos-delay="400">
+
+          <h4 class="footer-heading">Contact Us</h4>
+
+          <div class="contact-info">
+
+            <p><i class="bi bi-geo-alt-fill contact-icon"></i> No: 17/2016, Park Street,</p>
+
+            <p>Aanjaneya Complex, 1st Floor,</p>
+
+            <p>Namakkal, Tamil Nadu 637001</p>
+
+            <p class="mt-4"><i class="bi bi-telephone-fill contact-icon"></i> <span>+91-99526 48847</span></p>
+
+            <p><i class="bi bi-envelope-fill contact-icon"></i> <span>sarvamngo19@gmail.com</span></p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="container copyright text-center mt-4" data-aos="fade-up" data-aos-delay="500">
+
+      <p class="copyright-text">© <span>Copyright</span> <strong class="sitename pulse">Sarvam Trust</strong> <span>All Rights Reserved</span></p>
+
+      <div class="credits">
+
+        Designed by <a href="https://skyspheretech.com/" class="designer-link">SkySphere Technologies</a>
+
+      </div>
+
+    </div>
+
+
+
+  </footer>
+
+
+
+  <style>
+    /* Base Footer Styles */
+
+    .footer {
+
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 80px 0 40px;
+
+      background: #f9f9f9;
+
+      z-index: 1;
+
+    }
+
+
+
+    /* Background Elements */
+
+    .footer-bg-elements {
+
+      position: absolute;
+
+      width: 100%;
+
+      height: 100%;
+
+      top: 0;
+
+      left: 0;
+
+      z-index: -1;
+
+      overflow: hidden;
+
+    }
+
+
+
+    .bg-circle {
+
+      position: absolute;
+
+      border-radius: 50%;
+
+      background: rgba(78, 84, 200, 0.05);
+
+      filter: blur(30px);
+
+    }
+
+
+
+    .circle-1 {
+
+      width: 300px;
+
+      height: 300px;
+
+      top: -100px;
+
+      right: -100px;
+
+      animation: float 15s ease-in-out infinite;
+
+    }
+
+
+
+    .circle-2 {
+
+      width: 200px;
+
+      height: 200px;
+
+      bottom: 50px;
+
+      left: -50px;
+
+      animation: float 12s ease-in-out infinite reverse;
+
+    }
+
+
+
+    .circle-3 {
+
+      width: 150px;
+
+      height: 150px;
+
+      top: 30%;
+
+      left: 40%;
+
+      animation: float 10s ease-in-out infinite 2s;
+
+    }
+
+
+
+    .bg-wave {
+
+      position: absolute;
+
+      width: 200%;
+
+      height: 100px;
+
+      background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%234e54c8"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%234e54c8"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%234e54c8"/></svg>');
+
+      opacity: 0.1;
+
+      bottom: 0;
+
+      left: 0;
+
+      animation: wave 20s linear infinite;
+
+    }
+
+
+
+    .wave-2 {
+
+      bottom: 20px;
+
+      animation: wave 25s linear infinite reverse;
+
+      opacity: 0.05;
+
+    }
+
+
+
+    @keyframes float {
+
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(5deg);
+      }
+
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+    }
+
+
+
+    @keyframes wave {
+
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+
+    }
+
+
+
+    /* Logo Animation */
+
+    .logo-animate {
+
+      position: relative;
+
+      display: inline-block;
+
+    }
+
+
+
+    .logo-underline {
+
+      position: absolute;
+
+      bottom: -5px;
+
+      left: 0;
+
+      width: 0;
+
+      height: 2px;
+
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+
+      transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+    }
+
+
+
+    .logo-animate:hover .logo-underline {
+
+      width: 100%;
+
+    }
+
+
+
+    .sitename {
+
+      font-weight: 700;
+
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+
+      -webkit-background-clip: text;
+
+      background-clip: text;
+
+      color: transparent;
+
+      transition: all 0.3s ease;
+
+    }
+
+
+
+    .sitename.pulse {
+
+      animation: pulse 2s infinite;
+
+    }
+
+
+
+    @keyframes pulse {
+
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+
+    }
+
+
+
+    /* Social Icons */
+
+    .social-links {
+
+      gap: 15px;
+
+    }
+
+
+
+    .social-icon {
+
+      width: 40px;
+
+      height: 40px;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      color: white;
+
+      position: relative;
+
+      overflow: hidden;
+
+      transition: all 0.3s ease;
+
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+
+    .social-icon::before {
+
+      content: '';
+
+      position: absolute;
+
+      width: 100%;
+
+      height: 100%;
+
+      background: linear-gradient(135deg, skyblue, white);
+
+      z-index: -1;
+
+      transition: all 0.3s ease;
+
+    }
+
+
+
+    .social-icon:hover {
+
+      transform: translateY(-5px) scale(1.1);
+
+      box-shadow: 0 8px 20px rgba(78, 84, 200, 0.3);
+
+    }
+
+
+
+    .social-icon:hover i {
+
+      animation: icon-bounce 0.6s ease;
+
+    }
+
+
+
+    @keyframes icon-bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-5px);
+      }
+
+    }
+
+
+
+    /* Navigation Links */
+
+    .nav-link {
+
+      position: relative;
+
+      display: inline-block;
+
+      padding: 5px 0;
+
+      color: #333;
+
+      transition: color 0.3s ease;
+
+    }
+
+
+
+    .nav-link span {
+
+      position: relative;
+
+      z-index: 1;
+
+    }
+
+
+
+    .hover-underline::before {
+
+      content: '';
+
+      position: absolute;
+
+      bottom: 0;
+
+      left: 0;
+
+      width: 0;
+
+      height: 2px;
+
+      background: skyblue;
+
+      transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+
+    }
+
+
+
+    .nav-link:hover {
+
+      color: white;
+
+    }
+
+
+
+    .nav-link:hover::before {
+
+      width: 100%;
+
+      right: auto;
+
+    }
+
+
+
+    /* Contact Info */
+
+    .contact-icon {
+
+      color: rgb(37, 157, 222);
+
+      margin-right: 8px;
+
+      transition: transform 0.3s ease;
+
+    }
+
+
+
+    .contact-info p:hover .contact-icon {
+
+      transform: scale(1.2);
+
+    }
+
+
+
+    /* Copyright Section */
+
+    .copyright-text {
+
+      position: relative;
+
+      display: inline-block;
+
+    }
+
+
+
+    .copyright-text::after {
+
+      content: '';
+
+      position: absolute;
+
+      bottom: -5px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      width: 0;
+
+      height: 2px;
+
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+
+      transition: width 0.4s ease;
+
+    }
+
+
+
+    .copyright:hover .copyright-text::after {
+
+      width: 100%;
+
+    }
+
+
+
+    .designer-link {
+
+      position: relative;
+
+      color: #4e54c8;
+
+      font-weight: 600;
+
+    }
+
+
+
+    .designer-link::after {
+
+      content: '';
+
+      position: absolute;
+
+      bottom: -2px;
+
+      left: 0;
+
+      width: 0;
+
+      height: 2px;
+
+      background: #4e54c8;
+
+      transition: width 0.3s ease;
+
+    }
+
+
+
+    .designer-link:hover::after {
+
+      width: 100%;
+
+    }
+
+
+
+    /* Responsive Adjustments */
+
+    @media (max-width: 768px) {
+
+      .footer {
+
+        padding: 60px 0 30px;
+
+      }
+
+
+
+      .footer-links,
+      .footer-contact {
+
+        text-align: center;
+
+      }
+
+
+
+      .social-links {
+
+        justify-content: center;
+
+      }
+
+    }
+  </style>
+
+
+
+  <script>
+
+    // Add intersection observer for animations
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+      const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add('animated');
+
+          }
+
+        });
+
+      }, {
+
+        threshold: 0.1
+
+      });
+
+
+
+      document.querySelectorAll('[data-aos]').forEach(el => {
+
+        observer.observe(el);
+
+      });
+
+
+
+      // Magnetic effect for social icons
+
+      document.querySelectorAll('.social-icon').forEach(icon => {
+
+        icon.addEventListener('mousemove', (e) => {
+
+          const rect = icon.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+
+          const y = e.clientY - rect.top;
+
+
+
+          icon.style.setProperty('--x', `${x}px`);
+
+          icon.style.setProperty('--y', `${y}px`);
+
+
+
+          const centerX = rect.width / 2;
+
+          const centerY = rect.height / 2;
+
+          const distanceX = x - centerX;
+
+          const distanceY = y - centerY;
+
+
+
+          icon.style.transform = `translate(${distanceX * 0.15}px, ${distanceY * 0.15}px)`;
+
+        });
+
+
+
+        icon.addEventListener('mouseleave', () => {
+
+          icon.style.transform = 'translate(0, 0)';
+
+        });
+
+      });
+
+    });
+
+  </script>
+
+
+
+  <!-- Scroll Top -->
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+
+  <!-- Preloader -->
+
+  <div id="preloader"></div>
+
+
+
+  <!-- Vendor JS Files -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+
+  <!-- Main JS File -->
+
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>

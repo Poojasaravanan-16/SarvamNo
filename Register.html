@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Sarvam NGO - Make a Difference</title>
+    <link href="https://cdn.razorpay.com/logos/KMrKOuvyT8jYJg_large.jpeg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0076a8;
+            --primary-dark: #005f8b;
+            --secondary: #00b4ff;
+            --light: #f5f9ff;
+            --dark: #1d1d1f;
+            --gray: #7a7a8c;
+            --light-gray: #e1f0ff;
+            --success: #28a745;
+            --error: #dc3545;
+            --shadow: 0 4px 30px rgba(0, 180, 255, 0.15);
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+            color: var(--dark);
+            line-height: 1.5;
+        }
+
+        .hero-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #e6f4ff 0%, #cce9ff 100%);
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(0, 180, 255, 0.1);
+            animation: float 15s infinite linear;
+            filter: blur(1px);
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            animation: float-up 20s infinite linear;
+            filter: blur(2px);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(5px, 10px) rotate(5deg); }
+            50% { transform: translate(0, 15px) rotate(0deg); }
+            75% { transform: translate(-5px, 10px) rotate(-5deg); }
+        }
+
+        @keyframes float-up {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+        }
+
+        .container {
+            background: white;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            width: 100%;
+            max-width: 900px;
+            padding: 60px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 180, 255, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .logo {
+            height: 80px;
+            margin-bottom: 25px;
+            transition: var(--transition);
+            filter: drop-shadow(0 2px 10px rgba(0, 180, 255, 0.3));
+        }
+
+        .logo:hover {
+            transform: scale(1.1) rotate(-5deg);
+            filter: drop-shadow(0 5px 15px rgba(0, 180, 255, 0.4));
+        }
+
+        .header h1 {
+            color: #000;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: inline-block;
+            text-shadow: 0 2px 10px rgba(0, 180, 255, 0.2);
+        }
+
+        .header p {
+            color: var(--gray);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            transition: var(--transition);
+        }
+
+        .header:hover p {
+            color: var(--primary-dark);
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -12px;
+        }
+
+        .form-group {
+            flex: 1 0 calc(50% - 24px);
+            margin: 0 12px 30px;
+            position: relative;
+        }
+
+        .form-group.full-width {
+            flex: 1 0 calc(100% - 24px);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1px solid var(--light-gray);
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.8);
+            color: var(--dark);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(0, 180, 255, 0.2);
+            background: white;
+        }
+
+        .form-control:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 180, 255, 0.1);
+        }
+
+        .form-control::placeholder {
+            color: var(--gray);
+            opacity: 0.6;
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 18px 36px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 180, 255, 0.3);
+            margin-top: 10px;
+            animation: pulse 2.5s infinite;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 180, 255, 0.4);
+            animation: none;
+        }
+
+        .btn:disabled {
+            background: var(--gray);
+            transform: none;
+            box-shadow: none;
+            animation: none;
+            cursor: not-allowed;
+        }
+
+        .btn:active {
+            transform: translateY(1px) scale(0.98);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, var(--success), #5cb85c);
+            animation: none;
+        }
+
+        .btn-error {
+            background: linear-gradient(135deg, var(--error), #c82333);
+            animation: none;
+        }
+
+        .form-footer {
+            margin-top: 40px;
+            color: var(--gray);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .form-footer:hover {
+            color: var(--primary-dark);
+        }
+
+        .form-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .form-footer a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .form-footer a:hover {
+            color: var(--primary-dark);
+        }
+
+        .form-footer a:hover::after {
+            width: 100%;
+        }
+
+        .select-wrapper {
+            position: relative;
+        }
+
+        .select-wrapper::after {
+            content: '⌄';
+            font-size: 1.2rem;
+            color: var(--gray);
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            transition: var(--transition);
+        }
+
+        .select-wrapper:hover::after {
+            color: var(--primary);
+            transform: translateY(-50%) scale(1.2);
+        }
+
+        select.form-control {
+            appearance: none;
+            padding-right: 50px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        .checkbox-group:hover {
+            background: rgba(0, 180, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .checkbox-group input {
+            margin-right: 12px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .checkbox-group:hover input {
+            transform: scale(1.2);
+        }
+
+        .checkbox-group label {
+            margin-bottom: 0;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .checkbox-group:hover label {
+            color: var(--primary);
+        }
+
+        .illustration {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 180, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .illustration:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 180, 255, 0.3);
+        }
+
+        .illustration img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: var(--transition);
+            transform-origin: center;
+        }
+
+        .illustration:hover img {
+            transform: scale(1.02);
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: var(--light-gray);
+            border-radius: 3px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress {
+            height: 100%;
+            width: 33%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 3px;
+            transition: width 0.6s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.8) 50%,
+                    rgba(255, 255, 255, 0) 100%);
+            animation: progress-shine 2s infinite;
+        }
+
+        @keyframes progress-shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Floating label styles */
+        .float-label {
+            position: relative;
+        }
+
+        .float-label label {
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            pointer-events: none;
+            transition: var(--transition);
+            color: var(--gray);
+        }
+
+        .float-label input:focus + label,
+        .float-label input:not(:placeholder-shown) + label,
+        .float-label select:focus + label,
+        .float-label select:valid + label,
+        .float-label textarea:focus + label,
+        .float-label textarea:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 12px;
+            font-size: 0.8rem;
+            background: white;
+            padding: 0 8px;
+            color: var(--primary);
+            font-weight: 600;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 180, 255, 0.1);
+        }
+
+        /* Alert styles */
+        .alert {
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Error message styles */
+        .error-message {
+            color: var(--error);
+            font-size: 0.85rem;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .form-control.error {
+            border-color: var(--error);
+        }
+
+        /* Back button styles */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 118, 168, 0.1);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 10;
+        }
+
+        .back-button:hover {
+            background: rgba(0, 118, 168, 0.2);
+            transform: translateX(-3px);
+        }
+
+        .back-button svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            .form-group {
+                flex: 1 0 calc(100% - 24px);
+            }
+
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .back-button {
+                top: 15px;
+                left: 15px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-background">
+        <!-- Background particles will be added by JavaScript -->
+    </div>
+
+    <button class="back-button" onclick="window.history.back()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+    </button>
+
+    <div class="container mt-5">
+        <div class="header text-center">
+            <img src="assets/img/sarvam-logo-removebg-preview (1).png" alt="Sarvam NGO Logo" class="logo mb-3">
+            <h1>Join Our Movement</h1>
+            <p>Become part of something bigger. Together we can create lasting change in our communities.</p>
+        </div>
+
+        <div id="alert-container" class="my-3"></div>
+
+        <form id="registrationForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="2839ecf9-e760-4da1-ba8c-88fbd428c076">
+            <input type="hidden" name="subject" value="New Volunteer Application - Sarvam NGO">
+            <input type="hidden" name="from_name" value="Sarvam NGO Website">
+            <input type="checkbox" name="botcheck" style="display: none;">
+        
+            <div class="form-group mt-3 float-label">
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder=" " required>
+                <label for="firstName">First Name</label>
+            </div>
+        
+            <div class="form-group mt-3 float-label">
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder=" " required>
+                <label for="lastName">Last Name</label>
+            </div>
+        
+            <div class="form-group mt-3 float-label">
+                <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+                <label for="email">Email Address</label>
+            </div>
+        
+            <div class="form-group mt-3 float-label">
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder=" " required>
+                <label for="phone">Phone Number</label>
+            </div>
+        
+            <div class="form-group mt-3 float-label">
+                <input type="date" id="dob" name="dob" class="form-control" placeholder=" " required>
+                <label for="dob">Date of Birth</label>
+            </div>
+        
+            <div class="form-group mt-3 float-label">
+                <select id="gender" name="gender" class="form-control" required>
+                    <option value="" disabled selected hidden></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="gender">Gender</label>
+            </div>
+        
+            <div class="form-group mt-3 float-label">
+                <textarea id="address" name="address" class="form-control" rows="3" placeholder=" " required></textarea>
+                <label for="address">Full Address</label>
+            </div>
+        
+            <div class="form-group mt-3">
+                <label>Areas of Interest (Select all that apply):</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interests[]" value="Education Initiatives" id="interest1">
+                    <label class="form-check-label" for="interest1">Education Initiatives</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interests[]" value="Environmental Conservation" id="interest2">
+                    <label class="form-check-label" for="interest2">Environmental Conservation</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interests[]" value="Healthcare Programs" id="interest3">
+                    <label class="form-check-label" for="interest3">Healthcare Programs</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interests[]" value="Women Empowerment" id="interest4">
+                    <label class="form-check-label" for="interest4">Women Empowerment</label>
+                </div>
+            </div>
+        
+            <div class="form-group mt-3 float-label">
+                <input type="text" id="skills" name="skills" class="form-control" placeholder=" " required>
+                <label for="skills">Skills/Expertise</label>
+            </div>
+        
+            <div class="form-group mt-3 float-label">
+                <textarea id="reason" name="reason" class="form-control" rows="3" placeholder=" " required></textarea>
+                <label for="reason">Why do you want to join Sarvam NGO?</label>
+            </div>
+        
+            <button type="submit" id="submitBtn" class="btn btn-primary mt-4">Continue Application</button>
+        </form>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Create background particles
+            const heroBackground = document.querySelector('.hero-background');
+            const particleCount = 20;
+            const bubbleCount = 10;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 100px and 300px
+                const size = Math.random() * 200 + 100;
+                particle.style.width = ${size}px;
+                particle.style.height = ${size}px;
+                
+                // Random position
+                particle.style.left = ${Math.random() * 100}%;
+                particle.style.top = ${Math.random() * 100}%;
+                
+                // Random animation duration and delay
+                particle.style.animationDuration = ${Math.random() * 10 + 10}s;
+                particle.style.animationDelay = ${Math.random() * 5}s;
+                
+                heroBackground.appendChild(particle);
+            }
+            
+            for (let i = 0; i < bubbleCount; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                
+                // Random size between 20px and 60px
+                const size = Math.random() * 40 + 20;
+                bubble.style.width = ${size}px;
+                bubble.style.height = ${size}px;
+                
+                // Random position
+                bubble.style.left = ${Math.random() * 100}%;
+                bubble.style.bottom = -${size}px;
+                
+                // Random animation duration and delay
+                bubble.style.animationDuration = ${Math.random() * 15 + 15}s;
+                bubble.style.animationDelay = ${Math.random() * 10}s;
+                
+                heroBackground.appendChild(bubble);
+            }
+
+            const form = document.getElementById('registrationForm');
+            const submitBtn = document.getElementById('submitBtn');
+
+            // Basic field validation
+            function validateField(field) {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    return false;
+                } else {
+                    field.classList.remove('is-invalid');
+                    return true;
+                }
+            }
+
+            // Form submission
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                // Validate all required fields
+                let isValid = true;
+                document.querySelectorAll('input[required], select[required], textarea[required]').forEach(field => {
+                    if (!validateField(field)) {
+                        isValid = false;
+                    }
+                });
+
+                if (!isValid) {
+                    showAlert('Please fill all required fields correctly', 'error');
+                    return;
+                }
+
+                // Disable the submit button
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
+
+                try {
+                    const formData = new FormData(form);
+
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        showAlert('🎉 Your application has been submitted successfully! We will contact you soon.', 'success');
+                        form.reset();
+
+                        submitBtn.classList.remove('btn-error');
+                        submitBtn.classList.add('btn-success');
+                        submitBtn.textContent = 'Submitted Successfully!';
+
+                        setTimeout(() => {
+                            submitBtn.classList.remove('btn-success');
+                            submitBtn.innerHTML = 'Continue Application';
+                            submitBtn.disabled = false;
+                        }, 3000);
+                    } else {
+                        throw new Error(result.message || 'Submission failed. Please try again.');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    showAlert('There was an error submitting your form. Please try again.', 'error');
+                    submitBtn.classList.remove('btn-success');
+                    submitBtn.classList.add('btn-error');
+                    submitBtn.textContent = 'Error - Try Again';
+
+                    setTimeout(() => {
+                        submitBtn.classList.remove('btn-error');
+                        submitBtn.innerHTML = 'Continue Application';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                }
+            });
+
+            function showAlert(message, type) {
+                const alertContainer = document.getElementById('alert-container');
+                const alert = document.createElement('div');
+                alert.className = alert alert-${type === 'error' ? 'danger' : 'success'} animate_animated animate_fadeIn;
+                alert.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi ${type === 'error' ? 'bi-exclamation-triangle-fill text-danger' : 'bi-check-circle-fill text-success'}" viewBox="0 0 16 16">
+                            <path d="${type === 'error' ? 'M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z' : 'M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z'}"/>
+                        </svg>
+                        <div class="ms-3">${message}</div>
+                    </div>
+                `;
+                alertContainer.innerHTML = '';
+                alertContainer.appendChild(alert);
+
+                setTimeout(() => {
+                    alert.classList.add('animate__fadeOut');
+                    setTimeout(() => {
+                        alert.remove();
+                    }, 500);
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
